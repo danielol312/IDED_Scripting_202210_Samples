@@ -4,6 +4,8 @@ namespace SourceSample.TreeSample
 {
     public class Tree
     {
+        int a = 5;
+
         protected List<Node> nodes;
         public Node root { get; protected set; }
 
@@ -22,11 +24,11 @@ namespace SourceSample.TreeSample
         public virtual bool Remove(Node targetNode)
         {
             return nodes.Remove(targetNode);
-        }
+        }        
 
-        public void WriteValue(Node targetNode, int newValue)
+        public void WriteValue(Node targetNode, int newValue = 0)
         {
-            targetNode.Value = newValue;
+            targetNode.Value = 5;
         }
 
         public Tree()

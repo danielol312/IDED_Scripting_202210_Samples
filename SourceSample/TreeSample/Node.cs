@@ -4,7 +4,7 @@
     {
         public int Value;
 
-        public Node(int newValue)
+        public Node(int newValue = 0)
         {
             Value = newValue;
         }
